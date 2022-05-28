@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>GI Browser</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+	<style>
+		* {
+	margin: 0px;
+	padding: 0px;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url(fonts/montserrat.ttf) format("truetype");
+}
+
+body {
+	font-family: "Montserrat";
+
+}
+
+h1 {
+	font-size: 32px;
+}
+
+h1, p {
+	margin: 10px 0px;
+	padding: 5px 0px;
+}
+
+.navs {
+	display: flex;
+	justify-content: center;
+	padding: 10px;
+	background-color: #020060;
+	color: white;
+	text-align: center;
+	font-weight: lighter;
+	border-right: 1px solid white;
+	border-top: 1px solid white;
+	border-left: 1px solid white;
+}
+
+.navbar {
+	display: flex;
+	justify-content: center;
+	background-color: #020060;
+	border-right: 1px solid white;
+	border-bottom: 1px solid white;
+	border-left: 1px solid white;
+}
+
+.navbar > a {
+	padding: 10px;
+	margin: 0px;
+	color: white;
+	text-decoration: none;
+	transition: 0.5s all ease-out;
+}
+
+.navbar > a:hover {
+	padding: 10px;
+	margin: 0px;
+	background-color: white;
+	color: #020060;
+	text-decoration: none;
+	font-style: italic;
+	transition: 0.25s all ease-out;
+}
+
+@media (max-width: 700px) {
+	nav {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    padding: 30px 15px;
+    background-color: #e7e7e7;
+}
+
+.sec1, .sec2 {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+span.btn {
+	margin: 15px 5px;
+}
+
+span > #download-win {
+	padding: 15px 25px;
+	border: none;
+	background-color: white;
+	color: black;
+	border: 1px solid black;
+	text-decoration: none;
+}
+
+.sec2 > img {
+	border: 1px solid black;
+}
+
+	</style>
+</head>
+<body>
+
+	<div class="navs">
+		<nav>
+			<h1>GI Browser</h1>
+			<h3>O navegador oficial da Gabriel Informática!</h3>
+		</nav>
+	</div>
+
+	<nav class="navbar">
+		<a href="#">Sobre</a>
+		<a href="#">Requisitos</a>
+		<a href="#">Download</a>
+		<a href="#">Contato</a>
+	</nav>
+
+	<div class="grid">
+		<div class="sec1">
+			<h1>GI Browser, seu novo navegador</h1>
+			<p>Bem-vindo(a) à nova geração de navegadores web, o GI Browser é o navegador oficial da Gabriel Informática. E, como você sabe, tudo da Gabriel Informática tem sinônimo de qualidade!</p>
+			<div class="grid">
+			<span class="btn"><a href="#" id="download-win"><i class="fab fa-windows"></i> Download para Windows</a></span>
+			<span class="btn"><a href="#" id="download-win"><i class="fab fa-android"></i> Download para Android (em breve)</a></span>
+			</div>
+		</div>
+		<div class="sec2">
+			<img src="imgs/browser.png" alt="Navegador GI Browser">
+		</div>
+	</div>
+
+	<p>mais conteudo em breve!</p>
+	<p>fique ligado!</p>
+
+
+
+</body>
+</html>
